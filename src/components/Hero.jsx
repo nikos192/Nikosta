@@ -1,11 +1,13 @@
 import React from 'react'
+import logo from '../assets/logo.png'
+import heroSample from '../assets/hero-sample.jpg'
 
 export default function Hero({ onScrollToSection }) {
   return (
     <section className="min-h-[85vh] pt-28 pb-16 bg-white flex items-center">
       <div className="max-w-6xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-left">
-          <img src="/src/assets/logo.png" alt="Nikosta Systems" className="h-14 mb-6" />
+          <img src={logo} alt="Nikosta Systems" className="h-14 mb-6" />
           <div className="inline-block mb-4 px-3 py-1 rounded-full bg-marina-50 text-marina-600 text-sm font-medium">Gold Coast service websites</div>
           <h1 className="mb-4 text-navy-900 leading-tight">
             Websites for local businesses — built free, pay only if you want it.
@@ -44,7 +46,7 @@ export default function Hero({ onScrollToSection }) {
 
         <div className="order-first md:order-last">
           <div className="rounded-xl overflow-hidden shadow-premium">
-            <img src="/src/assets/hero-sample.jpg" alt="Website sample" className="w-full h-64 object-cover md:h-96" onError={(e)=>{e.target.src='https://images.unsplash.com/photo-1460925895917-adf4e9546f43?auto=format&fit=crop&w=1500&q=80'}}/>
+            <img src={heroSample} alt="Website sample" className="w-full h-64 object-cover md:h-96" onError={(e)=>{e.target.src='https://images.unsplash.com/photo-1460925895917-adf4e9546f43?auto=format&fit=crop&w=1500&q=80'}}/>
           </div>
         </div>
       </div>

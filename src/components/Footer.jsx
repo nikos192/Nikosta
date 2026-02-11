@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../assets/logo.png'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -9,7 +10,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="flex items-center gap-4">
-            <img src="/src/assets/logo.png" alt="Nikosta Systems" className="h-8" />
+            <img src={logo} alt="Nikosta Systems" className="h-8" />
             <div>
               <h4 className="text-lg font-light text-marina-200 mb-0">Nikosta Systems</h4>
               <p className="text-sm text-marina-200 font-light">
