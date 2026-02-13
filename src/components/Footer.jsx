@@ -9,7 +9,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="flex items-center gap-4">
-            <img src="/logo.png" alt="Nikosta Systems" className="h-8" />
+            <div className="h-10 w-10 rounded-full bg-navy-900/70 border border-marina-200/30 p-1.5 shadow-lg overflow-hidden flex items-center justify-center">
+              <img src="/logo.png" alt="Nikosta Systems" className="h-full w-full object-contain" />
+            </div>
             <div>
               <h4 className="text-lg font-light text-marina-200 mb-0">Nikosta Systems</h4>
               <p className="text-sm text-marina-200 font-light">
