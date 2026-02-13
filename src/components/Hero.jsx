@@ -48,8 +48,19 @@ export default function Hero({ onScrollToSection }) {
         </div>
 
         <div className="order-first md:order-last">
-          <div className="rounded-xl overflow-hidden shadow-premium">
-            <img src="/hero-sample.jpg" alt="Website sample" className="w-full h-64 object-cover md:h-96" onError={(e)=>{e.target.src='https://images.unsplash.com/photo-1460925895917-adf4e9546f43?auto=format&fit=crop&w=1500&q=80'}}/>
+          <div className="rounded-2xl border border-marina-200/30 bg-navy-800/60 shadow-premium p-10 md:p-12 flex items-center justify-center">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-3xl bg-marina-100/10 border border-marina-200/40 flex items-center justify-center">
+              <svg
+                viewBox="0 0 120 120"
+                className="w-20 h-20 md:w-24 md:h-24 text-marina-100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="18" y="22" width="84" height="64" rx="10" stroke="currentColor" strokeWidth="6" />
+                <path d="M34 72L52 52L66 64L88 40" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="40" cy="44" r="6" fill="currentColor" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
