@@ -29,11 +29,11 @@ export default function Why() {
   ];
 
   return (
-    <section className="py-20 md:py-32 bg-marina/10">
+    <section className="py-20 md:py-32 bg-navy-50">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="text-center mb-20">
           <h2 className="mb-4">Why Nikosta Systems</h2>
-          <p className="text-lg text-navy font-light max-w-2xl mx-auto">
+          <p className="text-lg text-navy-700 font-light max-w-2xl mx-auto">
             We are different because we put your success first.
           </p>
         </div>
@@ -42,28 +42,28 @@ export default function Why() {
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="p-8 bg-marina/20 rounded-lg border border-marina hover:border-navy transition-all"
+              className="p-8 bg-white rounded-lg border border-navy-100 hover:border-marina-300 transition-all"
             >
-              <h3 className="text-lg font-medium mb-3 text-navy">{reason.title}</h3>
-              <p className="text-navy/80 leading-relaxed font-light text-sm">
+              <h3 className="text-lg font-medium mb-3 text-navy-900">{reason.title}</h3>
+              <p className="text-navy-700 leading-relaxed font-light text-sm">
                 {reason.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="relative overflow-hidden rounded-2xl bg-navy text-marina p-12 md:p-16 text-center shadow-2xl">
+        <div className="relative overflow-hidden rounded-2xl bg-navy-900 text-marina-100 p-12 md:p-16 text-center shadow-2xl">
           <div className="max-w-3xl mx-auto">
             <h3 className="text-3xl md:text-4xl font-light mb-6 leading-tight">
               Ready to get started?
             </h3>
-            <p className="text-marina text-lg font-light mb-8 leading-relaxed">
+            <p className="text-marina-100/80 text-lg font-light mb-8 leading-relaxed">
               Get in touch and let us talk about building a website that works for your business.
               No pressure, no obligations. Just a straightforward conversation.
             </p>
             <a
-              href="#contact"
-              className="inline-block px-10 py-4 bg-marina text-navy font-medium rounded-full hover:bg-navy hover:text-marina border-2 border-marina transition-colors"
+              href="sms:+61497469408"
+              className="inline-block px-10 py-4 bg-marina-400 text-navy-900 font-medium rounded-full hover:bg-marina-300 border-2 border-marina-300 transition-colors"
             >
               Send a Message
             </a>

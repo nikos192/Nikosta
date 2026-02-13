@@ -2,47 +2,47 @@ import React from 'react'
 
 export default function Hero({ onScrollToSection }) {
   return (
-    <section className="min-h-[85vh] pt-28 pb-16 bg-navy-900 flex items-center">
+    <section className="min-h-[85vh] pt-28 pb-16 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700 flex items-center">
       <div className="max-w-6xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-left text-marina-100">
           <div className="inline-flex flex-col items-center mb-6">
             <div className="bg-navy-900 rounded-full p-2 shadow-xl flex items-center justify-center">
               <img src="/logo.png" alt="Nikosta Systems" className="h-16 w-16 object-contain rounded-full" />
             </div>
-            <span className="mt-2 text-xs tracking-widest text-marina-600 font-semibold uppercase">Nikosta Systems</span>
+            <span className="mt-2 text-xs tracking-widest text-marina-200 font-semibold uppercase">Nikosta Systems</span>
           </div>
-          <div className="inline-block mb-4 px-3 py-1 rounded-full bg-marina-50 text-marina-600 text-sm font-medium">Gold Coast service websites</div>
-          <h1 className="mb-4 text-navy-900 leading-tight">
+          <div className="inline-block mb-4 px-3 py-1 rounded-full bg-marina-100/20 text-marina-100 text-sm font-medium">Gold Coast service websites</div>
+          <h1 className="mb-4 text-marina-50 leading-tight">
             Websites for local businesses — built free, pay only if you want it.
           </h1>
 
-          <p className="text-lg text-navy-700 mb-6 max-w-xl leading-relaxed font-light">
+          <p className="text-lg text-marina-100/80 mb-6 max-w-xl leading-relaxed font-light">
             We design and build a professional website for your business at no cost. You review it — keep it only if you like it. No pressure, no contracts.
           </p>
 
           <div className="flex flex-wrap gap-4 items-center mb-6">
-            <a href="tel:+61497469408" className="inline-flex items-center gap-3 px-5 py-3 bg-marina-500 text-white font-medium rounded-full shadow-md">
+            <a href="tel:+61497469408" className="inline-flex items-center gap-3 px-5 py-3 bg-marina-500 text-white font-medium rounded-full shadow-md hover:bg-marina-400 transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5h2l2 7 4-4 5 5 3-3v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"/></svg>
               Call 0497 469 408
             </a>
 
-            <button onClick={() => onScrollToSection('how-it-works')} className="px-5 py-3 border border-navy-700 text-navy-700 rounded-full hover:bg-navy-700 hover:text-white transition">
+            <button onClick={() => onScrollToSection('how-it-works')} className="px-5 py-3 border border-marina-200 text-marina-100/80 rounded-full hover:bg-marina-100/20 hover:text-marina-50 transition">
               See packages
             </button>
           </div>
 
           <div className="flex gap-6 mt-4">
             <div className="text-center">
-              <div className="text-2xl font-semibold text-navy-900">500+</div>
-              <div className="text-sm text-navy-600">Happy clients</div>
+              <div className="text-2xl font-semibold text-marina-50">500+</div>
+              <div className="text-sm text-marina-100/70">Happy clients</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-semibold text-navy-900">5★</div>
-              <div className="text-sm text-navy-600">Rated Service</div>
+              <div className="text-2xl font-semibold text-marina-50">5★</div>
+              <div className="text-sm text-marina-100/70">Rated Service</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-semibold text-navy-900">10+</div>
-              <div className="text-sm text-navy-600">Years experience</div>
+              <div className="text-2xl font-semibold text-marina-50">10+</div>
+              <div className="text-sm text-marina-100/70">Years experience</div>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 export default function Contact() {
+  const smsNumber = '+61497469408'
   const [formData, setFormData] = useState({
     name: '',
     businessName: '',
@@ -20,10 +21,15 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // In a real application, you'd send this data to a server
-    console.log('Form submitted:', formData)
-    
-    // Simulate submission
+    const messageLines = [
+      `Name: ${formData.name}`,
+      `Business: ${formData.businessName}`,
+      `Phone: ${formData.phone}`,
+      formData.message ? `Message: ${formData.message}` : 'Message: (none)',
+    ]
+
+    const smsBody = encodeURIComponent(messageLines.join('\n'))
+    window.location.href = `sms:${smsNumber}?&body=${smsBody}`
     setSubmitted(true)
     setTimeout(() => {
       setFormData({ name: '', businessName: '', phone: '', message: '' })
@@ -36,7 +42,7 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         <div className="text-center mb-20">
           <h2 className="mb-4">Let's talk</h2>
-          <p className="text-lg text-navy font-light">
+          <p className="text-lg text-navy-700 font-light">
             No pressure. No sales pitch. Just a genuine conversation about your business.
           </p>
         </div>
@@ -48,7 +54,7 @@ export default function Contact() {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-navy-900 mb-2">
                   Your Name
                 </label>
                 <input
@@ -58,13 +64,13 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-4 py-3 border border-navy-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-marina-300 focus:border-transparent"
                   placeholder="John"
                 />
               </div>
 
               <div>
-                <label htmlFor="businessName" className="block text-sm font-medium text-gray-900 mb-2">
+                <label htmlFor="businessName" className="block text-sm font-medium text-navy-900 mb-2">
                   Business Name
                 </label>
                 <input
@@ -74,13 +80,13 @@ export default function Contact() {
                   value={formData.businessName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-4 py-3 border border-navy-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-marina-300 focus:border-transparent"
                   placeholder="Your Auto Repair"
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-2">
+                <label htmlFor="phone" className="block text-sm font-medium text-navy-900 mb-2">
                   Phone Number
                 </label>
                 <input
@@ -90,13 +96,13 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-4 py-3 border border-navy-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-marina-300 focus:border-transparent"
                   placeholder="(07) 5555 1234"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-900 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-navy-900 mb-2">
                   Tell us a bit about your business
                 </label>
                 <textarea
@@ -105,14 +111,14 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows="5"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent resize-none"
+                  className="w-full px-4 py-3 border border-navy-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-marina-300 focus:border-transparent resize-none"
                   placeholder="What do you do? What are your goals for a website..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-marina-500 text-white font-medium rounded-lg hover:bg-marina-600 transition-colors shadow-md"
+                className="w-full px-6 py-3 bg-marina-500 text-white font-medium rounded-lg hover:bg-marina-400 transition-colors shadow-md"
               >
                 {submitted ? 'Thanks! We\'ll be in touch.' : 'Send Message'}
               </button>
@@ -144,26 +150,26 @@ export default function Contact() {
               </div>
 
               <div>
-                <h4 className="text-sm font-medium text-navy mb-2">Address</h4>
-                <p className="text-navy font-light">
+                <h4 className="text-sm font-medium text-navy-900 mb-2">Address</h4>
+                <p className="text-navy-800 font-light">
                   Nikosta Systems<br />
                   Gold Coast, Australia
                 </p>
-                <p className="text-sm text-navy/80 mt-2 font-light">
+                <p className="text-sm text-navy-700 mt-2 font-light">
                   We serve local businesses throughout the Gold Coast region.
                 </p>
               </div>
 
               <div>
-                <h4 className="text-sm font-medium text-navy mb-4">Response Time</h4>
-                <p className="text-navy font-light">
+                <h4 className="text-sm font-medium text-navy-900 mb-4">Response Time</h4>
+                <p className="text-navy-800 font-light">
                   We try to get back to you within 24 hours. Sometimes faster if we're free.
                 </p>
               </div>
 
-              <div className="p-6 bg-marina/20 rounded-lg border border-marina">
-                <h4 className="text-sm font-medium text-navy mb-3">Not sure if it's right for you?</h4>
-                <p className="text-sm text-navy font-light leading-relaxed">
+              <div className="p-6 bg-marina-50 rounded-lg border border-marina-200">
+                <h4 className="text-sm font-medium text-navy-900 mb-3">Not sure if it's right for you?</h4>
+                <p className="text-sm text-navy-700 font-light leading-relaxed">
                   That's okay. Send us a message anyway. We can chat about whether a website makes
                   sense for your business right now. No commitment required.
                 </p>

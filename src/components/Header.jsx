@@ -13,19 +13,19 @@ export default function Header({ onScrollToSection }) {
         <nav className="hidden md:flex gap-8 text-sm">
           <button
             onClick={() => onScrollToSection('how-it-works')}
-            className="text-gray-600 hover:text-gray-900 transition-colors"
+            className="text-marina-100/80 hover:text-marina-50 transition-colors"
           >
             How it works
           </button>
           <button
             onClick={() => onScrollToSection('who-its-for')}
-            className="text-gray-600 hover:text-gray-900 transition-colors"
+            className="text-marina-100/80 hover:text-marina-50 transition-colors"
           >
             Who it's for
           </button>
           <button
             onClick={() => onScrollToSection('contact')}
-            className="text-gray-600 hover:text-gray-900 transition-colors"
+            className="text-marina-100/80 hover:text-marina-50 transition-colors"
           >
             Contact
           </button>
@@ -33,7 +33,7 @@ export default function Header({ onScrollToSection }) {
 
         <button
           onClick={() => onScrollToSection('contact')}
-          className="text-sm px-5 py-2 bg-marina-500 text-white rounded-full hover:bg-marina-600 transition-colors"
+          className="text-sm px-5 py-2 bg-marina-500 text-white rounded-full hover:bg-marina-400 transition-colors"
         >
           Get in touch
         </button>
