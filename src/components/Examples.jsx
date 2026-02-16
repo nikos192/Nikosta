@@ -29,7 +29,7 @@ export default function Examples() {
   ]
 
   return (
-    <section className="py-20 md:py-32 bg-navy-50">
+    <section id="examples" className="py-20 md:py-32 bg-navy-50">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="text-center mb-20">
           <h2 className="mb-4">Example websites</h2>

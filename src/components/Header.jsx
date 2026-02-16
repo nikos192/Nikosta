@@ -24,6 +24,12 @@ export default function Header({ onScrollToSection }) {
             Who it's for
           </button>
           <button
+            onClick={() => onScrollToSection('examples')}
+            className="text-marina-100/80 hover:text-marina-50 transition-colors"
+          >
+            Examples
+          </button>
+          <button
             onClick={() => onScrollToSection('contact')}
             className="text-marina-100/80 hover:text-marina-50 transition-colors"
           >
