@@ -3,27 +3,27 @@ import React from 'react'
 export default function Examples() {
   const examples = [
     {
-      name: "Morgan's Teal",
+      name: "Morgan's Mobile Mechanic",
       description: "Boutique business example - bold landing, clear services, quick contact flow.",
-      image: 'https://image.thum.io/get/width/1200/https://morgans-teal.vercel.app/',
+      gradient: 'from-teal-500 via-cyan-500 to-blue-500',
       link: 'https://morgans-teal.vercel.app/'
     },
     {
       name: 'North GC Landscape',
       description: 'Landscape company example - project highlights, services, and trust signals.',
-      image: 'https://image.thum.io/get/width/1200/https://north-gc-landscape-sups-2vij.vercel.app/',
+      gradient: 'from-emerald-500 via-green-500 to-lime-500',
       link: 'https://north-gc-landscape-sups-2vij.vercel.app/'
     },
     {
       name: "Sel's Auto",
       description: "Mechanic and repair shop example — clean service pages, contact and gallery.",
-      image: 'https://image.thum.io/get/width/1200/https://selsauto.vercel.app/',
+      gradient: 'from-amber-500 via-orange-500 to-rose-500',
       link: 'https://selsauto.vercel.app/'
     },
     {
       name: 'Detailia GC',
       description: 'Premium mobile detailing example — strong portfolio, packages and booking CTA.',
-      image: 'https://image.thum.io/get/width/1200/https://detalia-gc-111.vercel.app/',
+      gradient: 'from-slate-600 via-slate-700 to-slate-900',
       link: 'https://detalia-gc-111.vercel.app/'
     }
   ]
@@ -47,8 +47,8 @@ export default function Examples() {
               rel="noopener noreferrer"
               className="bg-white rounded-xl border border-navy-100 shadow-sm overflow-hidden flex flex-col h-full transition-transform duration-200 hover:-translate-y-1"
             >
-              <div className="h-44 bg-navy-50 overflow-hidden">
-                <img src={example.image} alt={example.name} className="w-full h-full object-cover" />
+              <div className={`h-44 bg-gradient-to-br ${example.gradient} text-white flex items-end p-4`}>
+                <div className="text-sm font-semibold tracking-wide uppercase">{example.name}</div>
               </div>
               <div className="p-6 flex-1 flex flex-col">
                 <div>
