@@ -27,7 +27,7 @@ export default function Hero({ onScrollToSection }) {
             </a>
 
             <button onClick={() => onScrollToSection('how-it-works')} className="px-5 py-3 border border-marina-200 text-marina-100/80 rounded-full hover:bg-marina-100/20 hover:text-marina-50 transition">
-              See packages
+              How it works
             </button>
           </div>
 
