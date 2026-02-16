@@ -17,13 +17,13 @@ export default function Examples() {
     {
       name: "Sel's Auto",
       description: "Mechanic and repair shop example — clean service pages, contact and gallery.",
-      image: 'https://selsauto.vercel.app/media/photo-of-exterior.png',
+      image: 'https://image.thum.io/get/width/1200/https://selsauto.vercel.app/',
       link: 'https://selsauto.vercel.app/'
     },
     {
       name: 'Detailia GC',
       description: 'Premium mobile detailing example — strong portfolio, packages and booking CTA.',
-      image: 'https://detalia-gc-111.vercel.app/images/car-1.png',
+      image: 'https://image.thum.io/get/width/1200/https://detalia-gc-111.vercel.app/',
       link: 'https://detalia-gc-111.vercel.app/'
     }
   ]
