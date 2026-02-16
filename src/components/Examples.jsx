@@ -55,8 +55,7 @@ export default function Examples() {
                   <h3 className="text-lg font-medium text-navy-900 mb-2">{example.name}</h3>
                   <p className="text-sm text-navy-700 mb-4 font-light">{example.description}</p>
                 </div>
-                <div className="mt-auto flex items-center justify-between">
-                  <div className="text-sm text-navy-900 font-semibold">From $150</div>
+                <div className="mt-auto flex items-center justify-end">
                   <span className="px-3 py-2 bg-marina-500 text-white rounded-full text-sm">View demo</span>
                 </div>
               </div>
