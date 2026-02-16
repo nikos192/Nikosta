@@ -3,7 +3,7 @@ import Section from './Section'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
-  const contactEmail = 'nikosta.systems@outlook.com'
+  const contactEmail = 'velorysystems@outlook.com'
 
   return (
     <footer className="bg-slate-950 border-t border-white/10 text-slate-200">
