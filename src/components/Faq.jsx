@@ -10,7 +10,7 @@ export default function Faq() {
           <p className="eyebrow">FAQ</p>
           <h2 className="mt-4 mb-4">Questions, answered</h2>
           <p className="body-lg">
-            Quick answers to common questions about working with Nikosta Systems.
+            Quick answers to common questions about working with VELORY.
           </p>
         </div>
       </AnimatedInView>

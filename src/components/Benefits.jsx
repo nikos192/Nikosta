@@ -28,7 +28,7 @@ export default function Benefits() {
       <AnimatedInView>
         <div className="text-center max-w-3xl mx-auto">
           <p className="eyebrow">Benefits</p>
-          <h2 className="mt-4 mb-4">Why local businesses choose Nikosta</h2>
+          <h2 className="mt-4 mb-4">Why local businesses choose VELORY</h2>
           <p className="body-lg">High-end design and fast delivery, without the agency chaos.</p>
         </div>
       </AnimatedInView>

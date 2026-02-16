@@ -1,10 +1,10 @@
-# Nikosta Systems - Website
+# VELORY - Website
 
-Modern, elegant, premium single-page website for Nikosta Systems - a local website-creation business on the Gold Coast, Australia.
+Modern, elegant, premium single-page website for VELORY - a local web design studio on the Gold Coast, Australia.
 
 ## About
 
-Nikosta Systems builds professional websites for local service businesses. We build the website for free first, you review it, and only pay if you want to keep it. No risk, no contracts, no pressure.
+VELORY builds professional websites for local service businesses with fast turnaround and premium presentation.
 
 ## Technology Stack
 
@@ -55,7 +55,7 @@ src/
 │   ├── HowItWorks.jsx   # 3-step process explanation
 │   ├── WhoItFor.jsx     # Target business types
 │   ├── Examples.jsx     # Example websites
-│   ├── Why.jsx          # Why choose Nikosta Systems
+│   ├── Why.jsx          # Why choose VELORY
 │   ├── Contact.jsx      # Contact form and info
 │   └── Footer.jsx       # Footer with links
 ├── App.jsx              # Main app component
@@ -113,7 +113,7 @@ The built site is production-ready. Deploy the `dist/` folder to any static host
 
 ## License
 
-© 2026 Nikosta Systems. All rights reserved.
+© 2026 VELORY. All rights reserved.
 
 ## Support
 

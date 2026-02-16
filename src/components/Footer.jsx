@@ -11,11 +11,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="flex items-center gap-4">
-            <div className="h-10 w-10 rounded-full bg-white/5 border border-white/10 p-1.5 shadow-lg overflow-hidden flex items-center justify-center">
-              <img src="/nikosta_square_transparent_1024.png" alt="Nikosta Systems" className="h-full w-full object-contain" />
+            <div className="h-9 w-9 md:h-10 md:w-10 rounded-full bg-white/5 border border-white/10 p-1 shadow-lg overflow-hidden flex items-center justify-center">
+              <img src="/velory-logo.png" alt="VELORY" className="h-full w-full object-contain" />
             </div>
             <div>
-              <h4 className="text-lg font-light text-white mb-0">Nikosta Systems</h4>
+              <h4 className="text-lg font-light text-white mb-0">VELORY</h4>
               <p className="text-sm text-slate-400 font-light">
                 Premium websites for local businesses on the Gold Coast.
               </p>
@@ -64,8 +64,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href={`mailto:${contactEmail}`} className="text-slate-400 hover:text-white transition-colors font-light">
-                  {contactEmail}
+                <a
+                  href={`mailto:${contactEmail}`}
+                  className="text-slate-400 hover:text-white transition-colors font-light"
+                  aria-label={`Email VELORY at ${contactEmail}`}
+                >
+                  Email VELORY
                 </a>
               </li>
               <li className="text-slate-400 font-light">
@@ -77,7 +81,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-slate-400 font-light">
-            © {currentYear} Nikosta Systems. All rights reserved.
+            © {currentYear} VELORY. All rights reserved.
           </p>
           <p className="text-xs text-slate-400 font-light mt-4 md:mt-0">
             Premium web design for local businesses.

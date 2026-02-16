@@ -6,7 +6,7 @@ export default function WhatWeDo() {
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.3em] text-marina-300/80">What we do</p>
-          <h2 className="mt-4 mb-4">What Nikosta Systems does</h2>
+          <h2 className="mt-4 mb-4">What VELORY does</h2>
           <p className="text-lg text-slate-300 font-light">
             Clear, premium websites for local businesses, delivered fast and built to earn trust.
           </p>

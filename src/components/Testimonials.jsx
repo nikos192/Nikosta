@@ -5,7 +5,7 @@ export default function Testimonials() {
     {
       name: 'Sophie Tran',
       business: 'Brightway Plumbing',
-      quote: 'Nikosta Systems made our business look established overnight. The site is clean, fast, and customers love it.'
+      quote: 'VELORY made our business look established overnight. The site is clean, fast, and customers love it.'
     },
     {
       name: 'Liam Hughes',

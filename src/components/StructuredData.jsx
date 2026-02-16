@@ -5,11 +5,11 @@ export default function StructuredData() {
     const organizationSchema = {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Nikosta Systems",
-      "url": "https://www.nikosta.app",
-      "logo": "https://www.nikosta.app/og.png",
-      "image": "https://www.nikosta.app/og.png",
-      "description": "Nikosta Systems designs and launches modern, professional websites for local businesses with fast turnaround (often 1–2 days).",
+      "name": "VELORY",
+      "url": "https://www.velory.app",
+      "logo": "https://www.velory.app/velory-logo.png",
+      "image": "https://www.velory.app/velory-logo.png",
+      "description": "VELORY designs fast, modern websites that make local businesses look established and generate more enquiries.",
       "areaServed": [
         {
           "@type": "City",
@@ -38,7 +38,6 @@ export default function StructuredData() {
         "availableLanguage": "English"
       },
       "telephone": "+61497469408",
-      "priceRange": "$$",
       "makesOffer": [
         {
           "@type": "Offer",
@@ -48,7 +47,7 @@ export default function StructuredData() {
             "description": "Custom website design and development for local businesses",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Nikosta Systems"
+              "name": "VELORY"
             }
           }
         },
@@ -60,7 +59,7 @@ export default function StructuredData() {
             "description": "Responsive, mobile-optimized websites",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Nikosta Systems"
+              "name": "VELORY"
             }
           }
         },
@@ -72,7 +71,7 @@ export default function StructuredData() {
             "description": "Complete domain registration and hosting configuration",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Nikosta Systems"
+              "name": "VELORY"
             }
           }
         }
@@ -82,12 +81,12 @@ export default function StructuredData() {
     const serviceSchema = {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "Nikosta Systems Website Design",
+      "name": "VELORY Website Design",
       "serviceType": "Website design and development",
       "provider": {
         "@type": "LocalBusiness",
-        "name": "Nikosta Systems",
-        "url": "https://www.nikosta.app"
+        "name": "VELORY",
+        "url": "https://www.velory.app"
       },
       "areaServed": {
         "@type": "City",

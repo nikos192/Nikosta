@@ -6,10 +6,10 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="grid gap-12 md:grid-cols-2 items-center">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-marina-300/80">About Nikosta Systems</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-marina-300/80">About VELORY</p>
             <h2 className="mt-4 mb-6">Built for local businesses that want to look premium fast.</h2>
             <p className="text-lg text-slate-300 font-light leading-relaxed">
-              Nikosta Systems helps local businesses establish a premium online presence with fast, modern websites designed to attract customers and build trust.
+              VELORY helps local businesses establish a premium online presence with fast, modern websites designed to attract customers and build trust.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a href="#contact" className="btn-primary">

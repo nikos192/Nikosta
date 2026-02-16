@@ -13,11 +13,12 @@ export default function Header({ onScrollToSection }) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-6 md:px-8 py-5 flex justify-between items-center text-white">
-        <div className="flex items-center gap-4">
-          <div className="h-10 w-10 md:h-12 md:w-12 rounded-full bg-white/5 border border-white/10 p-1.5 shadow-lg overflow-hidden flex items-center justify-center">
-            <img src="/nikosta_square_transparent_1024.png" alt="Nikosta Systems" className="h-full w-full object-contain" />
+        <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity" aria-label="VELORY home">
+          <div className="h-8 w-8 md:h-9 md:w-9 rounded-full bg-white/5 border border-white/10 p-1 shadow-lg overflow-hidden flex items-center justify-center">
+            <img src="/velory-logo.png" alt="VELORY" className="h-full w-full object-contain" />
           </div>
-        </div>
+          <span className="text-sm md:text-base font-semibold tracking-tight">VELORY</span>
+        </a>
 
         <nav className="hidden md:flex gap-8 text-sm text-slate-200">
           <a href="#work" onClick={handleNavClick('work')} className="hover:text-white transition-colors">

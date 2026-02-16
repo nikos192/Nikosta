@@ -33,7 +33,7 @@ export default function Why() {
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
           <p className="text-sm uppercase tracking-[0.3em] text-marina-300/80">Why us</p>
-          <h2 className="mt-4 mb-4">Why Nikosta Systems</h2>
+          <h2 className="mt-4 mb-4">Why VELORY</h2>
           <p className="text-lg text-slate-300 font-light max-w-2xl mx-auto">
             Premium execution with a fast, focused process.
           </p>
