@@ -35,11 +35,12 @@ export default function WhoItFor() {
   ]
 
   return (
-    <section id="who-its-for" className="py-20 md:py-32 bg-navy-50">
+    <section id="who-its-for" className="py-24 md:py-32 bg-slate-950 reveal">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="text-center mb-20">
-          <h2 className="mb-4">Who it's for</h2>
-          <p className="text-lg text-navy-700 font-light">
+        <div className="text-center mb-16">
+          <p className="text-sm uppercase tracking-[0.3em] text-marina-300/80">Audience</p>
+          <h2 className="mt-4 mb-4">Who it's for</h2>
+          <p className="text-lg text-slate-300 font-light">
             Any local service business on the Gold Coast.
           </p>
         </div>
@@ -48,34 +49,34 @@ export default function WhoItFor() {
           {businesses.map((business, index) => (
             <div
               key={index}
-              className="p-8 bg-white rounded-lg border border-navy-100 hover:border-marina-300 hover:shadow-md transition-all"
+              className="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300"
             >
-              <div className="text-4xl mb-4 text-navy-800">{business.icon}</div>
-              <h3 className="text-lg font-medium mb-3 text-navy-900">{business.title}</h3>
-              <p className="text-navy-700 text-sm leading-relaxed font-light">
+              <div className="text-4xl mb-4">{business.icon}</div>
+              <h3 className="text-lg font-medium mb-3 text-white">{business.title}</h3>
+              <p className="text-slate-300 text-sm leading-relaxed font-light">
                 {business.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="bg-navy-900 rounded-lg border border-marina-300 p-10">
-          <h3 className="text-xl font-light mb-4 text-marina-100">Why local businesses trust us</h3>
-          <ul className="space-y-3 text-marina-100 font-light">
+        <div className="glass-card rounded-2xl p-10">
+          <h3 className="text-xl font-light mb-4 text-white">Why local businesses trust us</h3>
+          <ul className="space-y-3 text-slate-200 font-light">
             <li className="flex gap-3">
-              <span className="text-marina-100 font-medium">✓</span>
+              <span className="text-marina-200 font-medium">✓</span>
               <span>We are based on the Gold Coast, we know local businesses</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-marina-100 font-medium">✓</span>
-              <span>We do not lock you in with contracts or ongoing retainers</span>
+              <span className="text-marina-200 font-medium">✓</span>
+              <span>Fast turnaround with a premium, polished finish</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-marina-100 font-medium">✓</span>
+              <span className="text-marina-200 font-medium">✓</span>
               <span>We build websites that are simple to understand and update</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-marina-100 font-medium">✓</span>
+              <span className="text-marina-200 font-medium">✓</span>
               <span>We talk straight — no agency jargon or buzzwords</span>
             </li>
           </ul>

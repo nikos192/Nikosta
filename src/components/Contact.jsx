@@ -38,23 +38,24 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-white">
-      <div className="max-w-4xl mx-auto px-6 md:px-8">
-        <div className="text-center mb-20">
-          <h2 className="mb-4">Let's talk</h2>
-          <p className="text-lg text-navy-700 font-light">
-            No pressure. No sales pitch. Just a genuine conversation about your business.
+    <section id="contact" className="py-24 md:py-32 bg-slate-950 reveal">
+      <div className="max-w-5xl mx-auto px-6 md:px-8">
+        <div className="text-center mb-16">
+          <p className="text-sm uppercase tracking-[0.3em] text-marina-300/80">Contact</p>
+          <h2 className="mt-4 mb-4">Let's talk</h2>
+          <p className="text-lg text-slate-300 font-light">
+            A calm, no-pressure conversation about your website goals.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16">
+        <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div>
-            <h3 className="text-xl font-light mb-8 text-navy-900">Send us a message</h3>
+          <div className="glass-card rounded-3xl p-8 md:p-10">
+            <h3 className="text-xl font-light mb-8 text-white">Send us a message</h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-navy-900 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-slate-200 mb-2">
                   Your Name
                 </label>
                 <input
@@ -64,13 +65,13 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-navy-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-marina-300 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-900/60 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-marina-400 focus:border-transparent"
                   placeholder="John"
                 />
               </div>
 
               <div>
-                <label htmlFor="businessName" className="block text-sm font-medium text-navy-900 mb-2">
+                <label htmlFor="businessName" className="block text-sm font-medium text-slate-200 mb-2">
                   Business Name
                 </label>
                 <input
@@ -80,13 +81,13 @@ export default function Contact() {
                   value={formData.businessName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-navy-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-marina-300 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-900/60 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-marina-400 focus:border-transparent"
                   placeholder="Your Auto Repair"
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-navy-900 mb-2">
+                <label htmlFor="phone" className="block text-sm font-medium text-slate-200 mb-2">
                   Phone Number
                 </label>
                 <input
@@ -96,13 +97,13 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-navy-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-marina-300 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-900/60 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-marina-400 focus:border-transparent"
                   placeholder="(07) 5555 1234"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-navy-900 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-slate-200 mb-2">
                   Tell us a bit about your business
                 </label>
                 <textarea
@@ -111,20 +112,20 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows="5"
-                  className="w-full px-4 py-3 border border-navy-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-marina-300 focus:border-transparent resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-900/60 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-marina-400 focus:border-transparent resize-none"
                   placeholder="What do you do? What are your goals for a website..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-marina-500 text-white font-medium rounded-lg hover:bg-marina-400 transition-colors shadow-md"
+                className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-marina-400 to-sky-400 text-slate-950 font-semibold shadow-[0_14px_30px_rgba(56,189,248,0.35)] transition-transform duration-200 hover:scale-[1.01]"
               >
                 {submitted ? 'Thanks! We\'ll be in touch.' : 'Send Message'}
               </button>
 
               {submitted && (
-                <p className="text-green-600 text-sm text-center font-light">
+                <p className="text-emerald-400 text-sm text-center font-light">
                   ✓ Your message has been sent. We'll get back to you soon.
                 </p>
               )}
@@ -132,44 +133,44 @@ export default function Contact() {
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h3 className="text-xl font-light mb-8 text-navy-900">Get in touch</h3>
+          <div className="glass-card rounded-3xl p-8 md:p-10">
+            <h3 className="text-xl font-light mb-8 text-white">Get in touch</h3>
             
             <div className="space-y-10">
               <div>
-                <h4 className="text-sm font-medium text-navy-900 mb-2">Phone</h4>
+                <h4 className="text-sm font-medium text-slate-200 mb-2">Phone</h4>
                 <a
                   href="tel:+61497469408"
-                    className="text-lg text-navy-900 hover:text-marina-500 transition-colors font-medium"
+                    className="text-lg text-white hover:text-marina-300 transition-colors font-medium"
                   >
                     0497 469 408
                 </a>
-                <p className="text-sm text-navy-700 mt-2 font-light">
+                <p className="text-sm text-slate-400 mt-2 font-light">
                   Call or text us. We're usually available during business hours.
                 </p>
               </div>
 
               <div>
-                <h4 className="text-sm font-medium text-navy-900 mb-2">Address</h4>
-                <p className="text-navy-800 font-light">
+                <h4 className="text-sm font-medium text-slate-200 mb-2">Address</h4>
+                <p className="text-slate-200 font-light">
                   Nikosta Systems<br />
                   Gold Coast, Australia
                 </p>
-                <p className="text-sm text-navy-700 mt-2 font-light">
+                <p className="text-sm text-slate-400 mt-2 font-light">
                   We serve local businesses throughout the Gold Coast region.
                 </p>
               </div>
 
               <div>
-                <h4 className="text-sm font-medium text-navy-900 mb-4">Response Time</h4>
-                <p className="text-navy-800 font-light">
-                  We try to get back to you within 24 hours. Sometimes faster if we're free.
+                <h4 className="text-sm font-medium text-slate-200 mb-4">Response Time</h4>
+                <p className="text-slate-300 font-light">
+                  We respond within 24 hours, often much faster.
                 </p>
               </div>
 
-              <div className="p-6 bg-marina-50 rounded-lg border border-marina-200">
-                <h4 className="text-sm font-medium text-navy-900 mb-3">Not sure if it's right for you?</h4>
-                <p className="text-sm text-navy-700 font-light leading-relaxed">
+              <div className="p-6 rounded-2xl border border-white/10 bg-white/5">
+                <h4 className="text-sm font-medium text-white mb-3">Not sure if it's right for you?</h4>
+                <p className="text-sm text-slate-300 font-light leading-relaxed">
                   That's okay. Send us a message anyway. We can chat about whether a website makes
                   sense for your business right now. No commitment required.
                 </p>

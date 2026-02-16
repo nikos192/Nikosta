@@ -2,45 +2,41 @@ import React from 'react'
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 md:py-28 bg-navy-50">
+    <section id="services" className="py-24 md:py-32 bg-slate-950 reveal">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="max-w-3xl">
-          <h2 className="mb-4">Services</h2>
-          <p className="text-lg text-navy-700 font-light">
-            Everything you need to launch a premium website quickly, with clear communication and minimal fuss.
+        <div className="text-center max-w-3xl mx-auto">
+          <p className="text-sm uppercase tracking-[0.3em] text-marina-300/80">Services</p>
+          <h2 className="mt-4 mb-4">Everything you need to launch fast</h2>
+          <p className="text-lg text-slate-300 font-light">
+            A premium end-to-end website service designed for local businesses that want to look established.
           </p>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          <div className="p-6 bg-white border border-navy-100 rounded-2xl shadow-sm">
-            <h3 className="text-lg font-medium text-navy-900 mb-3">Website design</h3>
-            <p className="text-sm text-navy-700 font-light leading-relaxed">
+          <div className="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300">
+            <h3 className="text-lg font-medium text-white mb-3">Website design</h3>
+            <p className="text-sm text-slate-300 font-light leading-relaxed">
               Modern layouts and brand-aware visuals that make your business feel credible and premium.
             </p>
           </div>
 
-          <div className="p-6 bg-white border border-navy-100 rounded-2xl shadow-sm">
-            <h3 className="text-lg font-medium text-navy-900 mb-3">Website development</h3>
-            <p className="text-sm text-navy-700 font-light leading-relaxed">
-              Fast, mobile-first builds that load quickly and make it easy for customers to contact you.
+          <div className="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300">
+            <h3 className="text-lg font-medium text-white mb-3">Website development</h3>
+            <p className="text-sm text-slate-300 font-light leading-relaxed">
+              Fast, mobile-first builds that load quickly and make it effortless to contact you.
             </p>
           </div>
 
-          <div className="p-6 bg-white border border-navy-100 rounded-2xl shadow-sm">
-            <h3 className="text-lg font-medium text-navy-900 mb-3">Website refresh</h3>
-            <p className="text-sm text-navy-700 font-light leading-relaxed">
-              Improve an existing site with clearer messaging, cleaner structure, and a premium finish.
+          <div className="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300">
+            <h3 className="text-lg font-medium text-white mb-3">Website refresh</h3>
+            <p className="text-sm text-slate-300 font-light leading-relaxed">
+              Elevate an existing site with clearer messaging, cleaner structure, and a premium finish.
             </p>
           </div>
         </div>
 
-        <div className="mt-10">
-          <a
-            href="#contact"
-            className="inline-flex items-center px-5 py-3 bg-marina-500 text-white font-medium rounded-full shadow-md hover:bg-marina-400 transition-colors"
-          >
-            Talk to us about your website
-          </a>
+        <div className="mt-10 text-center">
+          <a href="#contact" className="btn-primary">Talk to us about your website</a>
         </div>
       </div>
     </section>

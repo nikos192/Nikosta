@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,22 +6,86 @@
 
 @layer base {
   body {
-    @apply font-sans antialiased bg-navy-50 text-navy-900;
+    @apply font-sans antialiased bg-slate-950 text-slate-100;
   }
 
   a {
-    @apply text-marina-500 hover:text-marina-400;
+    @apply text-marina-300 hover:text-marina-200;
   }
 
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-navy-900;
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-white;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl font-semibold tracking-tight text-navy-900;
+    @apply text-3xl md:text-4xl font-semibold tracking-tight text-white;
   }
 
   h3 {
-    @apply text-xl md:text-2xl font-semibold tracking-tight text-navy-900;
+    @apply text-xl md:text-2xl font-semibold tracking-tight text-white;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 border border-white/10 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.45)];
+  }
+
+  .glass-muted {
+    @apply bg-slate-900/60 border border-white/10 backdrop-blur-xl;
+  }
+
+  .glow-ring {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 12px 40px rgba(59, 130, 246, 0.25);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-marina-400 to-sky-400 text-slate-950 font-semibold shadow-[0_12px_30px_rgba(56,189,248,0.35)] transition-transform duration-200 hover:scale-[1.03];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/20 text-white/90 backdrop-blur transition-transform duration-200 hover:scale-[1.03] hover:border-white/40;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 600ms ease, transform 600ms ease;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hero-animated {
+    background-size: 200% 200%;
+    animation: gradientShift 12s ease infinite;
+  }
+
+  .float-slow {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
   }
 }

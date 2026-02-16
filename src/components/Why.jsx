@@ -4,67 +4,64 @@ export default function Why() {
   const reasons = [
     {
       title: "We are Local",
-      description: "Based right here on the Gold Coast. We understand local business needs and the local market. We are not a faceless agency in another city."
+      description: "Based on the Gold Coast. We understand local business needs and the local market."
     },
     {
-      title: "No Contracts, No Retainers",
-      description: "Once we build your website, it is yours. No monthly fees, no lock-in periods. You own it. That is it."
+      title: "Premium Presentation",
+      description: "High-end visual design that makes your business look established and trustworthy."
     },
     {
       title: "Simple, Modern Design",
-      description: "We build clean websites that look professional and work beautifully on every device. No clutter. No fluff. Just results."
+      description: "Clean, focused websites that look professional and work beautifully on every device."
     },
     {
       title: "Clear Communication",
-      description: "We explain what we are doing and why. No jargon. No buzzwords. You will understand every step of the process."
+      description: "We explain what we are doing and why. No jargon. No buzzwords."
     },
     {
       title: "Easy to Update",
-      description: "Your website works for you, not the other way around. Built so you can easily update content and images without needing a developer."
+      description: "Your website works for you, not the other way around. Built for quick updates."
     },
     {
       title: "Focused on Results",
-      description: "We design with your goals in mind. A website that helps you get more customers and grow your business."
+      description: "We design with your goals in mind so your website drives real enquiries."
     }
   ];
 
   return (
-    <section className="py-20 md:py-32 bg-navy-50">
+    <section className="py-24 md:py-32 bg-slate-950 reveal">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        <div className="text-center mb-20">
-          <h2 className="mb-4">Why Nikosta Systems</h2>
-          <p className="text-lg text-navy-700 font-light max-w-2xl mx-auto">
-            We are different because we put your success first.
+        <div className="text-center mb-16">
+          <p className="text-sm uppercase tracking-[0.3em] text-marina-300/80">Why us</p>
+          <h2 className="mt-4 mb-4">Why Nikosta Systems</h2>
+          <p className="text-lg text-slate-300 font-light max-w-2xl mx-auto">
+            Premium execution with a fast, focused process.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="p-8 bg-white rounded-lg border border-navy-100 hover:border-marina-300 transition-all"
+              className="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300"
             >
-              <h3 className="text-lg font-medium mb-3 text-navy-900">{reason.title}</h3>
-              <p className="text-navy-700 leading-relaxed font-light text-sm">
+              <h3 className="text-lg font-medium mb-3 text-white">{reason.title}</h3>
+              <p className="text-slate-300 leading-relaxed font-light text-sm">
                 {reason.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="relative overflow-hidden rounded-2xl bg-navy-900 text-marina-100 p-12 md:p-16 text-center shadow-2xl">
+        <div className="relative overflow-hidden rounded-3xl glass-card p-12 md:p-16 text-center">
           <div className="max-w-3xl mx-auto">
-            <h3 className="text-3xl md:text-4xl font-light mb-6 leading-tight">
+            <h3 className="text-3xl md:text-4xl font-light mb-6 leading-tight text-white">
               Ready to get started?
             </h3>
-            <p className="text-marina-100/80 text-lg font-light mb-8 leading-relaxed">
-              Get in touch and let us talk about building a website that works for your business.
-              No pressure, no obligations. Just a straightforward conversation.
+            <p className="text-slate-300 text-lg font-light mb-8 leading-relaxed">
+              Let us design a premium website that makes your business the obvious choice.
             </p>
-            <a
-              href="#contact"
-              className="inline-block px-10 py-4 bg-marina-400 text-navy-900 font-medium rounded-full hover:bg-marina-300 border-2 border-marina-300 transition-colors"
-            >
+            <a href="#contact" className="btn-primary">
               Send a Message
             </a>
           </div>
